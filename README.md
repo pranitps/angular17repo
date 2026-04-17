@@ -4,31 +4,31 @@ This repository contains multiple Angular 17 projects demonstrating core concept
 
 📁 Project Structure
 
-Angular/
-│── 1.Basics/
-│── 2.Components/
-│── 3.Directives/
-│── 3.ControlFlow/
-│── 4.Services/
-│── 5.Routing/
-│── 6.Forms/
-│── 7.HTTP/
-│── 8.Advanced/
-│── ...
+    Angular/
+    │── 1.Basics/
+    │── 2.Components/
+    │── 3.Directives/
+    │── 3.ControlFlow/
+    │── 4.Services/
+    │── 5.Routing/
+    │── 6.Forms/
+    │── 7.HTTP/
+    │── 8.Advanced/
+    │── ...
 
 Each folder represents a standalone Angular project focused on a specific concept.
 
 🧠 Topics Covered
 
-Angular Fundamentals
-Components & Data Binding
-Directives (Structural & Attribute)
-Control Flow (@if, @for, @switch) – Angular 17
-Services & Dependency Injection
-Routing & Navigation
-Template-driven & Reactive Forms
-HTTP Client & API Integration
-Advanced Concepts & Best Practices
+    Angular Fundamentals
+    Components & Data Binding
+    Directives (Structural & Attribute)
+    Control Flow (@if, @for, @switch) – Angular 17
+    Services & Dependency Injection
+    Routing & Navigation
+    Template-driven & Reactive Forms
+    HTTP Client & API Integration
+    Advanced Concepts & Best Practices
 
 
 ⚙️ Prerequisites
@@ -71,6 +71,7 @@ This repository includes examples using Angular 17 features:
     Standalone components
 
 📦 Best Practices Followed
+    
     Modular folder structure
     Clean and readable code
     Reusable components
