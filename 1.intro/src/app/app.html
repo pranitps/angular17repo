@@ -1,0 +1,37 @@
+<h1>Hello, {{ title() }}</h1>
+<h2>
+  {{ title1 }}
+</h2>
+<!--Attribute binding-->
+<button [disabled]="isDisabled" type="button">{{ myBtn }}</button>
+
+<!--Style binding-->
+<div [style.backgroundColor]="bgColor">
+  <h2 [style.color]="titleColor">Welcome to {{ title1 }}</h2>
+</div>
+
+<!--Class binding-->
+<h2 [class.textColor]="redText == 'abcd'">Title</h2>
+
+<!--Two way binding example-->
+<h2>
+  {{ title2 }}
+</h2>
+<h2>Counter: {{ counter }}</h2>
+<button (click)="incrementCounter()">Increment</button>
+
+<br/>
+<input [(ngModel)]="inputText" type="text" />
+<h2>You Entered: {{ inputText }}</h2>
+
+<!--ngClass example-->
+<br/>
+<div [ngClass]="classes">
+  {{ message }} 
+</div>
+
+<!--ngStyle example-->
+<br/> 
+<div class="color-box" [ngStyle]="{'background-color': selectedColor}">
+  This text will change color based on the selectedColor variable.    
+</div>

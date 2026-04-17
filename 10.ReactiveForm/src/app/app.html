@@ -1,0 +1,27 @@
+<h1>Hello, {{ title() }}</h1>
+<form [formGroup]="userForm" 
+      (ngSubmit)="submitForm()">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" formControlName="name" placeholder="name">
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" formControlName="email" placeholder="email">
+  </div>
+  <div formGroupName="address">
+    <label for="street">Street:</label>
+    <input type="text" id="street" name="street" formControlName="street" placeholder="Street">
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" formControlName="city" placeholder="city">
+  </div>
+  <div formArrayName="phoneNumbers">
+    <label>Phone Numbers:</label>
+    <div *ngFor="let phone of phoneNumbers.controls; let i=index">
+      <input type="text" [formControlName]="i" placeholder="Phone Number">
+      <button type="button" (click)="removePhoneNumber(i)">Remove</button>
+    </div>
+    <button type="button" (click)="addPhoneNumber()">Add Phone Number</button>
+  </div>
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+</form>

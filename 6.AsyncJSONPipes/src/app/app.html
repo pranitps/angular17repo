@@ -1,0 +1,10 @@
+<h1>Hello, {{ title() }}</h1>
+
+<div *ngIf="user | async as users">
+  <ul>
+    <li *ngFor="let u of users">
+      {{ u.id }}
+      {{ u.name }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,27 @@
+<h1>Hello, {{ title() }}</h1>
+
+<h1>Hello, {{ title() | lowercase }}</h1>
+
+<h1>Hello, {{ title() | uppercase }}</h1>
+
+<div>
+  <p>Today is {{ today }}</p>
+  <p>Today is {{ today | date }}</p>
+  <p>Today is {{ today | date:'fullDate' }}</p>
+  <p>Today is {{ today | date:'fullDate' | uppercase }}</p>
+  <p>Today is {{ today | date:'shortDate' }}</p>
+  <p>Today is {{ today | date:'medium' }}</p>
+  <p>Today is {{ today | date:'full' }}</p>
+  <p>Today is {{ today | date:'h:mm:s' }}</p>
+</div>
+
+<br/>
+<p>{{ price }}</p>
+<p>{{ price | currency }}</p>
+<p>{{ price | currency : "EUR" : "symbol" }}</p>
+<p>{{ price | currency : "EUR" : "symbol" : "1.2-4" }}</p>
+
+<br/>
+<p>{{ percent }}</p>
+<p>{{ percent | percent }}</p>
+<p>{{ percent | percent : "1.2-4" }}</p>

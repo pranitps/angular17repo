@@ -1,0 +1,34 @@
+<h1>Hello, {{ title() }}</h1>
+
+@if (a > b){
+  <p>{{ a }} is greater than {{ b }}</p>  
+}@else if(b > a){
+  <p>{{ b }} is greater than {{ a }}</p>  
+}@else{
+  <p>{{ a }} and {{ b }} are equal</p>  
+}
+  
+
+<ul>
+  @for (item of items; track item.name){
+    <li>{{ item.name }} - ${{ item.price }}</li>
+  }
+</ul>
+
+@switch(grade){
+  @case ('A'){
+    <p>Excellent!</p>
+  }
+  @case ('B'){
+    <p>Good job!</p>
+  }
+  @case ('C'){ 
+    <p>Well done!</p>
+  } 
+  @case ('D'){
+    <p>You passed.</p>
+  } 
+  @default{
+    <p>Better luck next time.</p>
+  }
+}

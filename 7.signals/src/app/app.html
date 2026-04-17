@@ -1,0 +1,20 @@
+<h1>Hello, {{ title() }}</h1>
+<br/>
+
+<input 
+  [value]="newTodoText()"
+  (input)="handleInput($event)"
+  placeholder="Add new todo"
+  />
+
+<button (click)="addTodo()">Add Todo</button>
+<P>Total: {{ todos().length }}</P>
+<ul>
+  <li *ngFor="let todo of todos()">
+    <span [style.text-decoration]="todo.done ? 'line-through' : 'none'">
+      {{ todo.text }}
+    </span>
+    <button (click)="deleteTodo(todo.id)">Remove</button>
+  </li>
+  </ul>
+
