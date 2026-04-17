@@ -35,13 +35,13 @@ Each folder represents a standalone Angular project focused on a specific concep
 
 Make sure you have the following installed:
 
-Node.js (>= 18.x recommended)
-npm (>= 9.x)
-Angular CLI
+    Node.js (>= 18.x recommended)
+    npm (>= 9.x)
+    Angular CLI
 
 Install Angular CLI globally if not already installed:
 
-npm install -g @angular/cli
+    npm install -g @angular/cli
 
 ▶️ How to Run a Project
 
